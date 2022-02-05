@@ -12,7 +12,7 @@ public class App {
 //        Product model = создать экземпляр
         Product model = new Product();
 //        SalesView view = создать экземпляр
-        SalesView view = new SalesView();
+        SalesView view = new SalesView("Апельсин", 6, 37.50);
 //        ProductController controller = создать экземпляр
         ProductController controller = new ProductController(model, view);
 

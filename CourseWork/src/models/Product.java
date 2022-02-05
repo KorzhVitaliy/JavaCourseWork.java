@@ -57,7 +57,7 @@ public class Product implements Fiscal, Income {
         return productIncome(quantity, price) * TAX_RATE;
     }
 
-// Расчёт чистого дохода, после уплаты налога.
+    // Расчёт чистого дохода, после уплаты налога.
     // здесь ...
     @Override
     public double productIncome() {
