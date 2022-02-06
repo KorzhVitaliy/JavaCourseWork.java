@@ -18,6 +18,7 @@ public class Product implements Fiscal, Income {
 
     // Обеспечьте доступ к полям модели через getters и setters
     // здесь ...
+
     public String getName() {
         return name;
     }
@@ -60,8 +61,8 @@ public class Product implements Fiscal, Income {
     // Расчёт чистого дохода, после уплаты налога.
     // здесь ...
     @Override
-    public double productIncome() {
-        return productIncome(quantity, price) - taxSum();
+    public double productIncome(double productIncome, double taxSummery) {
+        return productIncome - taxSummery;
     }
 }
 
